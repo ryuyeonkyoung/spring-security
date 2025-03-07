@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
-/* 기본 구성 재정의
+/* 기본 구성 재정의 - 두 객체를 빈으로 정의
 UserDetailService를 재정의 할 때는 PasswordEncoder도 같이 선언해야 함 */
 @Configuration
 public class ProjectConfig extends WebSecurityConfigurerAdapter {

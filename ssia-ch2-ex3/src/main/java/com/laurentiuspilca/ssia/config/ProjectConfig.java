@@ -8,6 +8,8 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
+// 다른 방법으로 구성 - 빈으로 정의하는 대신 WebSecurityConfigurerAdapter의 configure 메소드 재정의
+// 가독성 측면에서 위의 방법 (Bean)과 혼합하여 사용하지 않는 것이 좋음.
 @Configuration
 public class ProjectConfig extends WebSecurityConfigurerAdapter {
 
